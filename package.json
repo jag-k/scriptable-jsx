@@ -1,0 +1,52 @@
+{
+  "name": "@jag-k/scriptable-jsx",
+  "description": "Create a Scriptable bundle from JSX",
+  "license": "SEE LICENSE IN LICENSE",
+  "version": "1.0.0",
+  "author": {
+    "email": "jag.konon@gmail.com",
+    "name": "Jag_k",
+    "url": "https://github.com/jag-k"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jag-k/rollup-plugin-scriptable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jag-k/rollup-plugin-scriptable/issues"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "prebuild": "rm -rf dist"
+  },
+  "files": [
+    "dist",
+    "types/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "scriptable",
+    "scriptable-ios",
+    "scriptable-app",
+    "jsx"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.4",
+    "rollup": "^2.67.3",
+    "tslib": "^2.4.0"
+  },
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "@types/scriptable-ios": "^1.6.5"
+  }
+}

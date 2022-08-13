@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": [
+      "ES2021"
+    ],
+    "jsxFactory": "ScriptableJSX.createElement",
+    "noEmit": true,
+    "noEmitOnError": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "sourceMap": false,
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "strictFunctionTypes": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "typeRoots": [
+      "node_modules/@types/scriptable-ios",
+      "./types/*"
+    ],
+    "types": [
+      "@types/scriptable-ios"
+    ],
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*",
+    "types/**/*"
+  ]
+}
