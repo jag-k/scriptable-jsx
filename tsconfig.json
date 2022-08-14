@@ -17,6 +17,8 @@
     "pretty": true,
     "sourceMap": false,
     "strict": true,
+    "declaration": true,
+    "declarationDir": "dist",
     "typeRoots": [
       "node_modules/@types/scriptable-ios",
       "./types"
