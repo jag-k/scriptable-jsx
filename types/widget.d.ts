@@ -62,7 +62,8 @@ export declare namespace JSX {
 
   type ImageContentMode = "fitting" | "filling";
 
-  interface ImageCommonProps extends Alienable {
+  interface ImageProps extends Alienable {
+    data: string /* file url */ | Image | Data;
     size?: Size;
     cornerRadius?: number;
     resizable?: boolean;
@@ -74,10 +75,6 @@ export declare namespace JSX {
     url?: string;
     contentMode?: ImageContentMode;
   }
-
-  type ImageProps =
-    & ImageCommonProps
-    & ({ data: Data } | { fileURL: string } | { image: Image });
 
   interface DateProps extends TextProps {
     date: Date | string | number;

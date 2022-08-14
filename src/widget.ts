@@ -321,12 +321,14 @@ function processContainerChildren(widget: WidgetStack | ListWidget, children: an
 
           case "image": {
             let init;
-            if (child.props.image) {
-              init = child.props.image;
-            } else if (child.props.data) {
-              init = Image.fromData(child.props.data);
-            } else if (child.props.fileURL) {
+            const {data} = child.props || {};
+
+            if (typeof data === "string") {
               init = Image.fromFile(child.props.fileURL);
+            } else if (data.size) {
+              init = data;
+            } else {
+              init = Image.fromData(data);
             }
 
             const image = widget.addImage(init);
