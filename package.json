@@ -2,7 +2,7 @@
   "name": "@jag-k/scriptable-jsx",
   "description": "Create a Scriptable bundle from JSX",
   "license": "SEE LICENSE IN LICENSE",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "email": "jag.konon@gmail.com",
     "name": "Jag_k",
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jag-k/rollup-plugin-scriptable.git"
+    "url": "https://github.com/jag-k/scriptable-jsx.git"
   },
   "bugs": {
-    "url": "https://github.com/jag-k/rollup-plugin-scriptable/issues"
+    "url": "https://github.com/jag-k/scriptable-jsx/issues"
   },
   "type": "module",
   "main": "dist/index.js",
