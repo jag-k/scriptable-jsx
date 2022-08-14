@@ -31,7 +31,7 @@ jobs:
         with:
           registry-url: 'https://npm.pkg.github.com'
       - name: Publish to GitHub Packages
-        if: ${{ steps.build.conclusion == 'success' }}
+        if: ${{ always() && steps.build.conclusion == 'success' }}
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PKG_TOKEN }}
