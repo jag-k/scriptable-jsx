@@ -1,5 +1,3 @@
-/// <reference path="../types/index.d.ts" />
-
 import {widgetCreateElement} from "./widget";
 import {alertCreateElement} from "./alert";
 

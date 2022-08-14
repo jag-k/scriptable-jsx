@@ -1,5 +1,3 @@
-import type {JSX} from "../types/alert";
-
 // =============================
 // Alert JSX Element processing
 // =============================

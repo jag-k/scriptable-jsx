@@ -1,5 +1,3 @@
-import type {JSX} from "../types/widget";
-
 // =============================
 // Widget JSX Element processing
 // =============================
