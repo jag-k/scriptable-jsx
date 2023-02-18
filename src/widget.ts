@@ -312,7 +312,7 @@ function processContainerChildren(widget: WidgetStack | ListWidget, children: an
           case "spacer": {
             const spacer = widget.addSpacer();
             if (child?.props?.size) {
-              spacer.length = child.props.length;
+              spacer.length = child.props.size;
             }
             break;
           }
